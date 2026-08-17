@@ -35,10 +35,10 @@ jobs:
     steps:
       - name: Checkout the Repository
         uses: actions/checkout@v4
-- name: Setup Go
-  uses: actions/setup-go@v5
-  with:
-    go-version: "1.22"
+      - name: Setup Go
+        uses: actions/setup-go@v5
+        with:
+          go-version: "1.22"
       - name: Run Action Lint
         run: bash <(curl -s https://raw.githubusercontent.com/lupaxa-cicd-toolbox/action-lint/master/src/pipeline.sh)
 ```
@@ -85,14 +85,14 @@ jobs:
     steps:
       - name: Checkout the Repository
         uses: actions/checkout@v4
-- name: Setup Go
-  uses: actions/setup-go@v5
-  with:
-    go-version: "1.22"
+      - name: Setup Go
+        uses: actions/setup-go@v5
+        with:
+          go-version: "1.22"
       - name: Run Action Lint
-env:
-  REPORT_ONLY: true
-  SHOW_ERRORS: true
+        env:
+          REPORT_ONLY: true
+          SHOW_ERRORS: true
         run: bash <(curl -s https://raw.githubusercontent.com/lupaxa-cicd-toolbox/action-lint/master/src/pipeline.sh)
 ```
 
