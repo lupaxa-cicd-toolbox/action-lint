@@ -105,18 +105,18 @@ jobs:
 ---------------------------------------------------------- Stage 2: Install Prerequisites --
  [ OK ] actionlint is already installed
 -------------------------------------------------------- Stage 3: Run actionlint (v1.7.0) --
- [ OK ] .github/workflows/cicd.yml
- [ OK ] .github/workflows/citation-validation.yml
- [ OK ] .github/workflows/delete-old-workflow-runs.yml
- [ OK ] .github/workflows/dependabot.yml
- [ OK ] .github/workflows/document-validation.yml
- [ OK ] .github/workflows/generate-release.yml
- [ OK ] .github/workflows/generate-test-release.yml
- [ OK ] .github/workflows/greetings.yml
- [ OK ] .github/workflows/purge-deprecated-workflow-runs.yml
- [ OK ] .github/workflows/repository-validation.yml
- [ OK ] .github/workflows/security-hardening.yml
- [ OK ] .github/workflows/stale.yml
+ [ ✅ ] .github/workflows/cicd.yml
+ [ ✅ ] .github/workflows/citation-validation.yml
+ [ ✅ ] .github/workflows/delete-old-workflow-runs.yml
+ [ ✅ ] .github/workflows/dependabot.yml
+ [ ✅ ] .github/workflows/document-validation.yml
+ [ ✅ ] .github/workflows/generate-release.yml
+ [ ✅ ] .github/workflows/generate-test-release.yml
+ [ ✅ ] .github/workflows/greetings.yml
+ [ ✅ ] .github/workflows/purge-deprecated-workflow-runs.yml
+ [ ✅ ] .github/workflows/repository-validation.yml
+ [ ✅ ] .github/workflows/security-hardening.yml
+ [ ✅ ] .github/workflows/stale.yml
 ------------------------------------------------------------------------- Stage 4: Report --
  Total: 12, OK: 12, Failed: 0, Skipped: 0
 ----------------------------------------------------------------------- Stage 5: Complete --
@@ -131,9 +131,7 @@ GitHub action files are identified using the following code:
 ```
 
 > [!NOTE]
-> The default scan root is `.github/workflows`.
-
-There is no file magic for GitHub Action files, so `file -b` cannot identify them.
+> There is no file magic for GitHub Action files, so `file -b` cannot identify them.
 
 <a href="https://github.com/the-lupaxa-project">
     <img src="https://raw.githubusercontent.com/the-lupaxa-project/brand-assets/master/logos/components/footer-for-child-orgs.svg" alt="The Lupaxa Project Footer" width="100%" />
